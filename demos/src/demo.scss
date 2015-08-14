@@ -1,0 +1,12 @@
+$o-assets-global-path: '/bower_components/';
+$o-type-is-silent: false;
+
+@import '../../main';
+
+html {
+	overflow-y: scroll;
+	@include oColorsFor(page);
+}
+body {
+	margin: 0;
+}

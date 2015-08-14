@@ -1,0 +1,14 @@
+{
+    "description": "Typography defaults",
+    "origamiType": "module",
+    "origamiVersion": 1,
+    "support": "https://github.com/Financial-Times/o-type/issues",
+    "supportStatus": "experimental",
+    "demos": [
+        {
+            "path": "/demos/demo.html",
+            "expanded": true,
+            "description": ""
+        }
+    ]
+}

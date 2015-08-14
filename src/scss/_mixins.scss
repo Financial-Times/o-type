@@ -1,0 +1,113 @@
+////
+/// @group o-type
+/// @link http://registry.origami.ft.com/components/o-type
+////
+
+//
+// @TODO: Add docs to oType!
+//
+@mixin oType($sets: (default, extended)) {
+	@if index($sets, default) {
+		a img {
+			border: 0;
+		}
+		> h2,
+		> h3,
+		> p,
+		> ul,
+		> ol,
+		> figure {
+			line-height: 1.2;
+			font-family: $o-type-font-family;
+			text-rendering: optimizeLegibility;
+
+			a {
+				text-decoration: none;
+			}
+		}
+		> p,
+		> ul,
+		> ol,
+		> figure {
+			margin-top: 0.3em;
+			margin-bottom: 0.8em;
+		}
+		> p,
+		> ul,
+		> ol,
+		> figure figcaption {
+			font-size: 20px;
+			font-weight: 200;
+
+			a {
+				border-bottom: 1px dotted oColorsGetColorFor(link, text);
+				color: oColorsGetColorFor(link, text);
+
+				&:hover,
+				&:focus {
+					border-bottom: 0;
+					color: oColorsGetColorFor(page, text);
+				}
+			}
+		}
+		> hr {
+			background: none;
+			border: 0;
+			border-top: 1px solid oColorsGetPaletteColor(pink-tint3);
+		}
+		> figure {
+			margin-right: 0;
+			margin-left: 0;
+		}
+		> img,
+		> svg,
+		> video,
+		> object,
+		> iframe,
+		> figure,
+		> figure img,
+		> figure svg {
+			max-width: 100%;
+			height: auto;
+		}
+		> figure figcaption {
+			font-size: 16px;
+		}
+	}
+	// @if index($sets, extended) {
+	// 	> blockquote {
+
+	// 	}
+	// }
+}
+
+//
+// @TODO: Add docs to oTypeHero!
+//
+@mixin oTypeHero() {
+	font-size: 30px;
+	line-height: 1.2;
+	font-weight: 200;
+	font-family: $o-type-font-family;
+	text-align: center;
+
+	@media (min-width: 490px) {
+		font-size: 34px;
+	}
+	@media (min-width: 730px) {
+		font-size: 38px;
+	}
+	@media (min-width: 970px) {
+		font-size: 42px;
+	}
+}
+
+//
+// @TODO: Add docs to oTypeIntro!
+//
+@mixin oTypeIntro() {
+	font-size: 24px;
+	line-height: 1.2;
+	font-weight: 200;
+	font-family: $o-type-font-family;
+}

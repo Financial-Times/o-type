@@ -1,0 +1,16 @@
+{
+  "name": "o-type",
+  "dependencies": {},
+  "main": [
+    "main.scss",
+    "main.js"
+  ],
+  "ignore": [
+    "examples",
+    "test",
+    ".gitignore"
+  ],
+  "devDependencies": {
+    "o-colors": "~3.0.0"
+  }
+}

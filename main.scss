@@ -1,0 +1,21 @@
+// External imports
+@import 'o-colors/main';
+
+// Internal imports
+@import 'src/scss/variables';
+@import 'src/scss/mixins';
+
+@if not $o-type-is-silent {
+	.o-type {
+		@include oType(default);
+	}
+	.o-type--extended {
+		@include oType($sets: (extended));
+	}
+	.o-type-hero {
+		@include oTypeHero;
+	}
+	.o-type-intro {
+		@include oTypeIntro;
+	}
+}
