@@ -1,5 +1,7 @@
 # o-type
 
+This module has now been deprecated. Please use [o-typography](https://github.com/Financial-Times/o-typography).
+
 ----
 
 Recommended setup
